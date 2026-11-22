@@ -1,0 +1,40 @@
+ARABIYYA 2.1 — CORRECTION DE VISIBILITÉ ET DE CHARGEMENT
+
+Les fichiers ont été vérifiés : 36 modules (12 A2, 12 B1, 12 B2).
+Cette version ne change pas les cours par rapport à la 2.0. Elle affiche le
+nombre réellement chargé et ajoute un diagnostic, plus un contournement des
+anciens fichiers mis en cache.
+
+POUR LA MISE À JOUR RECOMMANDÉE :
+1. Dans Arabiyya, Réglages > Exporter mes progrès (sauvegarde de sécurité).
+2. Fermer l'application ET l'ancienne fenêtre noire LANCER_SUR_WINDOWS.bat.
+   Sinon un ancien serveur sur le port 8080 peut afficher l'ancien dossier.
+   Sauvegarder les fichiers localement avant toute modification.
+3. Extraire le ZIP de mise à jour. Copier ses fichiers dans LE MÊME DOSSIER
+   que l'index.html d'Arabiyya, et accepter de remplacer les fichiers existants.
+   Ne pas créer un sous-dossier supplémentaire.
+4. Lancer LANCER_SUR_WINDOWS.bat. Le navigateur s'ouvrira sur
+   http://localhost:8080/index.html?version=2.1
+5. Dans le menu Mes leçons, vérifier les 36 cartes réparties sur 16 mois.
+   Sur l'accueil, on ne voit volontairement que les DEUX prochains modules.
+6. Si nécessaire ouvrir VERIFIER_MODULES.html dans ce même dossier :
+   il affiche le nombre réellement contenu dans courses.js.
+
+POUR REMPLACER UN SEUL FICHIER :
+Le ZIP « courses_js_SEUL.zip » contient courses.js. L'extraire à côté
+index.html pour remplacer l'ancien. L'ancienne interface fonctionnera,
+mais n'affichera pas toutes les nouvelles fonctions de la version 2.
+Sur une PWA déjà installée, vider le cache ou relancer depuis l'adresse
+.../index.html?version=2.1 peut être nécessaire.
+
+ASTUCE : sur Windows, vérifier l'existence de fichiers nommés
+courses.js ET courses (1).js. Ce dernier n'est pas automatiquement lu.
+Le fichier attendu doit s'appeler exactement courses.js.
+
+PROGRESSION : les résultats restent stockés par le navigateur sous
+« arabiyya-progress-v1 ». Remplacer les fichiers du dossier n'efface pas
+ces données, tant que l'origine (adresse, port) n'est pas changée et que
+les données du site ne sont pas supprimées.
+
+AVERTISSEMENT : ne pas utiliser « Effacer les données du site » sans avoir
+exporté ses progrès ; cela effacerait la progression locale.
