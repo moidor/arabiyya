@@ -1,6 +1,6 @@
 # Arabiyya — application d'apprentissage de l'arabe
 
-Application progressive en français pour étudier l'arabe littéraire moderne (fuṣḥā), avec des aperçus du levantin (libano-syrien). Version 2.1 : 36 modules (12 A2, 12 B1 et 12 B2), exercices, conjugaisons, vocabulaire et révisions.
+Application progressive en français pour étudier l'arabe littéraire moderne (fuṣḥā), avec des aperçus du levantin (libano-syrien). Version 2.2 : 36 modules (12 A2, 12 B1 et 12 B2), exercices, conjugaisons, vocabulaire et révisions.
 
 ## Utiliser l'application
 
@@ -10,7 +10,17 @@ Application progressive en français pour étudier l'arabe littéraire moderne (
 
 ## Activer GitHub Pages
 
-Dans **Settings → Pages** du dépôt, sélectionner **Deploy from a branch**, branche **main** et dossier **/(root)**. Enregistrer et attendre la fin de la publication.
+Dans **Settings → Pages** du dépôt, sélectionner **GitHub Actions** comme source. Le workflow `.github/workflows/deploy.yml` prépare et publie automatiquement le site à chaque commit sur `main`. Suivre l’état dans l’onglet **Actions**.
+
+## Lecture audio en arabe (version 2.2)
+
+Dans **Réglages → Lecture audio en arabe**, cliquer sur **Actualiser les voix**, sélectionner une voix si elle est disponible, puis sur **Tester la voix arabe**.
+
+- Si aucune voix arabe n’est trouvée, installer une voix arabe dans les paramètres de synthèse vocale du téléphone ou de l’ordinateur.
+- Sur Android, ouvrir le site dans Chrome, vérifier la synthèse vocale et le volume multimédia.
+- Sur Windows, vérifier les langues et composants vocaux dans **Paramètres → Heure et langue**.
+- Le résultat dépend des voix installées et du navigateur. Arabiyya 2.2 ne contient pas encore d’enregistrements humains ni de serveur de synthèse vocale.
+- Après une mise à jour, recharger le site si l’ancienne interface reste en cache.
 
 ## Suivi de progression
 
